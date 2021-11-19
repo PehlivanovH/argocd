@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 5
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ghcr.io/pehlivanovh/golang-webserver:v0.5
+        image: ghcr.io/pehlivanovh/golang-webserver:v1.0
         ports:
         - containerPort: 8080
